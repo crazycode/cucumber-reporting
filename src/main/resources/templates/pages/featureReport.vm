@@ -5,13 +5,13 @@
 
 #include("/templates/headers.html")
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css">
+<script src="http://ajax.useso.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/lightbox/2.6/css/lightbox.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
 #if($artifactsEnabled)
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
-    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/base/jquery-ui.css" rel="stylesheet" />
+    <script src="http://lib.sinaapp.com/js/jquery/1.7.2/jquery.min.js"></script>
+    <script src="http://lib.sinaapp.com/js/jquery-ui/1.8.11/jquery-ui.min.js"></script>
+    <link type="text/css" href="http://lib.sinaapp.com/js/jquery-ui/1.8.11/themes/base/jquery-ui.css" rel="stylesheet" />
     <link rel="stylesheet" href="CodeMirror-2.33/theme/eclipse.css">
     <link rel="stylesheet" href="CodeMirror-2.33/lib/codemirror.css">
     <script src="CodeMirror-2.33/lib/codemirror.js"></script>
@@ -45,7 +45,7 @@
     </script>
 #end
 
-#include("/styles/reporting.css")                        
+#include("/styles/reporting.css")
 
 </head>
 <body id="top">
@@ -61,11 +61,11 @@
             <div>
                 <table class="stats-table">
                     #if($parallel)
-                        #include("/templates/tableHeaderParallel.vm")                        
+                        #include("/templates/tableHeaderParallel.vm")
                     #else
-                        #include("/templates/tableHeader.vm")                        
+                        #include("/templates/tableHeader.vm")
                     #end
-                    
+
                     #set($sf = $feature.getRawName())
 
                     <tr>
@@ -123,7 +123,7 @@
     </div>
 
 
-#parse("/templates/footer.vm")                        
+#parse("/templates/footer.vm")
 
 </body>
 </html>
